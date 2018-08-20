@@ -220,7 +220,7 @@ export default class Player extends EventEmitter {
       current._id + 1
 
     if (nextIndex >= list.length) {
-      this.emit('error', 'No next song was found')
+      //this.emit('error', 'No next song was found')
       this.emit('finish', current)
       return this
     }
